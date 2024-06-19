@@ -1,4 +1,2 @@
-
 #include <exception>
-#include "Image.h"
-
+#include "PointMatrix.h"

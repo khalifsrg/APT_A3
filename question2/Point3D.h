@@ -12,18 +12,21 @@ public:
     Point3D(double x, double y, double z);
 
     //Deconstructor
-    ~Point3D();
+    virtual ~Point3D();
 
     // Return the l1-norm of the point
     // l1-norm = abs(x) + abs(y) + abs(z)
-    double getL1Norm() const;
+    double getL1Norm() const override;
 
     // Should return a reference to the correspoinding 
     // coordinate of the point
     // 'x' <- x-coordinate
     // 'y' <- y-coordinate
     // 'z' <- y-coordinate
-    double& operator[](const char dim);
+
+    //PostCondition: Based on the 'dim' it returns a reference to the x or y
+    double& operator[](const char dim) override;
+
 
 private:
     /*                                           */

@@ -47,7 +47,7 @@ int main(){
     for (int i = 0; i != N_ROWS; ++i) {
         for (int j = 0; j != N_COLS; ++j) {
             std::cout << std::scientific << std::setprecision(2)
-                            << pm2D.get(i, j).getL1Norm() << " ";
+                            << pm2D.get(i, j)->getL1Norm() << " ";
         }
         std::cout << std::endl;
     }
@@ -74,7 +74,7 @@ int main(){
     for (int i = 0; i != N_ROWS; ++i) {
         for (int j = 0; j != N_COLS; ++j) {
             std::cout << std::setfill('0') << std::setw(3) 
-                                << pm3D.get(i, j).getL1Norm() << " ";
+                                << pm3D.get(i, j)->getL1Norm() << " ";
         }
         std::cout << std::endl;
     }

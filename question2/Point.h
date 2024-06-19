@@ -7,17 +7,13 @@
 /* the general concepts of a point           */
 /*                                           */
 
-class Point{
-public:    
+class Point {
+public:
+    virtual ~Point() {} // Virtual destructor for polymorphic behavior
 
-    // get the l1 norm of point
-    double getL1Norm() const;
-
-    //[] operator to access a given coordinates of a point
-    double& operator[](const char dim);
-
-private:
-    
+    virtual double getL1Norm() const = 0; // Pure virtual function for L1 norm calculation
+    virtual double& operator[](const char dim) = 0; // Pure virtual function for accessing coordinates
 };
+
 
 #endif //COSC1076_A3_POINT_H

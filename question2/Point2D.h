@@ -12,17 +12,19 @@ public:
     Point2D(double x, double y);
 
     //Deconstructor
-    ~Point2D();
+    virtual ~Point2D();
 
     // Return the l1-norm of the point
     // l1-norm = abs(x) + abs(y)
-    double getL1Norm() const;
+    double getL1Norm() const override;
 
-    // Should return a reference to the correspoinding 
+    // Should return a reference to the corresponding 
     // coordinate of the point
     // 'x' <- x-coordinate
     // 'y' <- y-coordinate
-    double& operator[](const char dim);
+
+    //PostCondition: Based on the 'dim' it returns a reference to the x or y
+    double& operator[](const char dim) override;
 
 private:
     /*                                           */
