@@ -22,7 +22,10 @@ void AdmissionEntry::setDischargeDate(const std::string& dischargeDate) {
     this->dischargeDate = dischargeDate;
 }
 
-// Overload operator<<
+/// @brief Overload operator to assist in outputting the Admission history of the patient
+/// @param os Output stream where the admission entry details will be printed
+/// @param entry The AdmissionEntry object that contains the details to be printed
+/// @return Return the output stream with the appended details
 std::ostream& operator<<(std::ostream& os, const AdmissionEntry& entry) {
     os << "Admission Date: " << entry.admissionDate << ", Discharge Date: " << entry.dischargeDate << ", Admitted Ward: " << entry.admittedWard;
     return os;

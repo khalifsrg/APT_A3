@@ -16,13 +16,13 @@ public:
 
     int getNumberOfPatients() const;
 
-    bool isPatientInRegister(int registrationNumber) const;
+    bool checkPatientInRegister(int registrationNumber) const;
 
     Patient getPatient(int regisrationNumber) const;
 
     Patient operator[](int registrationNumber) const;
 
-    bool hasNoDuplicatePatients() const;
+    bool checkNoDuplicatePatients() const;
 
     std::vector<Patient> getAllPatients() const;
 };
