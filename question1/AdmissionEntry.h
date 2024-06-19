@@ -1,5 +1,5 @@
 #ifndef ADMISSIONENTRY_H
-#define ADMISIONENTRY_H
+#define ADMISSIONENTRY_H
 
 #include <string>
 #include <iostream>
@@ -14,7 +14,7 @@ public:
     AdmissionEntry(const std::string& admissionDate, const std::string& admittedWard, const std::string& dischargeDate = "");
 
     std::string getAdmissionDate() const;
-    std::string getDischargenDate() const;
+    std::string getDischargeDate() const;
     std::string getAdmittedWard() const;
 
     void setDischargeDate (const std::string& dischargeDate);

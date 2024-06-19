@@ -26,9 +26,8 @@ public:
     std::vector<AdmissionEntry> getAdmissionHistory() const;
 
     void addAdmissionEntry(const AdmissionEntry& entry);
-
-    friend std::ostream& operator<<(std::ostream& os, const Patient& patient);
     
+    friend std::ostream& operator<<(std::ostream& os, const Patient& patient);
 };
 
 #endif // PATIENT_H
