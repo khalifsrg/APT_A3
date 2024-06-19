@@ -18,11 +18,6 @@ public:
     // l1-norm = abs(x) + abs(y) + abs(z)
     double getL1Norm() const override;
 
-    // Should return a reference to the correspoinding 
-    // coordinate of the point
-    // 'x' <- x-coordinate
-    // 'y' <- y-coordinate
-    // 'z' <- y-coordinate
 
     //PostCondition: Based on the 'dim' it returns a reference to the x or y
     double& operator[](const char dim) override;

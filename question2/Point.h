@@ -9,10 +9,10 @@
 
 class Point {
 public:
-    virtual ~Point() {} // Virtual destructor for polymorphic behavior
+    virtual ~Point() {} // Virtual destructor to assist in polymorphic behaviour
 
-    virtual double getL1Norm() const = 0; // Pure virtual function for L1 norm calculation
-    virtual double& operator[](const char dim) = 0; // Pure virtual function for accessing coordinates
+    virtual double getL1Norm() const = 0; // Using pure virtual function to assist in L1 norm calculation
+    virtual double& operator[](const char dim) = 0; // Using pure virtual function to assist in accessing coordinates
 };
 
 
